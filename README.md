@@ -17,3 +17,5 @@ Open the terminal and cd into the directory of the script.
 Then type `python3 Stest.py` press <kbd>Enter</kbd>.
 
 Press the button on the GUİ wait for 30 seconds and the results will come up.
+# Error's
+There is some issues with the GUI will be fixed soon.

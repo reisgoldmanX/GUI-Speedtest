@@ -1,6 +1,7 @@
 import speedtest
 from tkinter import *
 
+
 root = Tk()  # Calling the Tkinter module.
 root.configure(background="black")  # Configure the background as black.
 root.title("STest")  # Set the Title of the program.
@@ -30,7 +31,7 @@ def check():
     except:
         err = Label(root, text="Error while testing connection speed!", fg="black", bg="red")
         err.pack()  # Sets the exception error
-
+    
 
 testBt = Button(root, text="Test Speed!", padx=40, pady=20, bg="black", fg="yellow", command=check)
 testBt.pack()  # Sets the button

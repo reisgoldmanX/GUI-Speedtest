@@ -17,7 +17,6 @@ start_test = Label(root, text="(Results of the  connection speed test.)", fg="gr
 
 
 def check():
-
     try:
         servernames = []
         bar["value"] -= bar["value"]
@@ -33,20 +32,24 @@ def check():
         ping = test.results.ping
         bar["value"] += 10
         start_test.pack()
-
         test_done = "Download Speed: {:5.2f} Mb\nUpload Speed: {:5.2f} Mb\nPing: {} ms".format(down, up, ping)
-        all1 = Label(root, text=test_done, bg="black", fg="white", font=("Courier", 12))  # Printing results to screen.
-
+        var.set(test_done)
         all1.pack()
-        bar.destroy()
     except:
-        err = Label(root, text="Error while testing connection speed!", fg="black", bg="red")
-        err.pack()  # Sets the exception error
+        print("hata")
 
 
-th = threading.Thread(target=check)
-testBt = Button(root, text="Test Speed!", padx=40, pady=20, bg="black", fg="yellow", command=th.start)
+def threadButtonOne():
+    try:
+        threading.Thread(target=check).start()
+    except:
+        threading.Thread(target=check).start()
+
+
+testBt = Button(root, text="Test Speed!", padx=40, pady=20, bg="black", fg="yellow", command=threadButtonOne)
 testBt.pack()  # Sets the button
-
+var = StringVar()
+var.set("Click the button...")
+all1 = Label(root, textvariable=var, bg="black", fg="white", font=("Courier", 12))  # Printing results to screen.
 
 root.mainloop()

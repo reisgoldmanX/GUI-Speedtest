@@ -1,5 +1,5 @@
 # Connection speed tester!
-This is a connection speed tester, with a GUİ build in it.
+This is a connection speed tester, with a GUI build in it.
 # Technologies & Installations
 * [Python](https://www.python.org/) 3.8
 * [speedtest-cli](https://pypi.org/project/speedtest-cli/) 2.1.2
@@ -16,5 +16,5 @@ Then type `Stest.py` press  <kbd>Enter</kbd>.
 Open the terminal and cd into the directory of the script.
 Then type `python3 Stest.py` press <kbd>Enter</kbd>.
 
-Press the button on the GUİ wait for 30 seconds and the results will come up.
+Press the button on the GUI wait for 30 seconds and the results will come up.
 

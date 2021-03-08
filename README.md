@@ -1,5 +1,5 @@
 # Connection speed tester!
-This is a connection speed tester, with a GUİ build in it.
+This is a connection speed tester, with a GUI build in it.
 # Technologies & Installations
 * [Python](https://www.python.org/) 3.8
 * [speedtest-cli](https://pypi.org/project/speedtest-cli/) 2.1.2
